@@ -1,3 +1,4 @@
+using ETicaretAPI.Application;
 using TourReservationApi.Persistence;
 using TourReservationApi.Persistence.Contexts;
 
@@ -8,6 +9,7 @@ builder.Services.AddPersistanceServices();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddApplicationServices();
 
 
 var app = builder.Build();

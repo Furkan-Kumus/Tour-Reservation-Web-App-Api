@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TourReservationApi.Persistence
-build_property.ProjectDir = C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\
+build_property.ProjectDir = C:\Users\furka\Desktop\Tour-Reservation-Web-App\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\
