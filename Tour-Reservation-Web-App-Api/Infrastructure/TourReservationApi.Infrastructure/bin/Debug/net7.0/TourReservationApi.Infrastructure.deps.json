@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TourReservationApi.Infrastructure/1.0.0": {
+        "dependencies": {
+          "TourReservationApi.Application": "1.0.0"
+        },
+        "runtime": {
+          "TourReservationApi.Infrastructure.dll": {}
+        }
+      },
+      "TourReservationApi.Application/1.0.0": {
+        "dependencies": {
+          "TourReservationApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TourReservationApi.Application.dll": {}
+        }
+      },
+      "TourReservationApi.Domain/1.0.0": {
+        "runtime": {
+          "TourReservationApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TourReservationApi.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TourReservationApi.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TourReservationApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

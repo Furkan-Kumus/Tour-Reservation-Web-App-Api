@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj": {}
+    "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj": {
+    "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj",
         "projectName": "TourReservationApi.Application",
-        "projectPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj",
-        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\obj\\",
+        "projectPath": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj",
+        "packagesPath": "C:\\Users\\Alpsu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alpsu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj": {
-                "projectPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj"
+              "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj": {
+                "projectPath": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj"
               }
             }
           }
@@ -68,20 +67,20 @@
         }
       }
     },
-    "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj": {
+    "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj",
         "projectName": "TourReservationApi.Domain",
-        "projectPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj",
-        "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\TourReservationApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\Alpsu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alpsu\\OneDrive\\Masaüstü\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alpsu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -90,7 +89,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

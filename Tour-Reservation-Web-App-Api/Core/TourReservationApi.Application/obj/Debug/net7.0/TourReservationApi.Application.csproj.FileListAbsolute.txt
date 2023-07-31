@@ -1,0 +1,15 @@
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Application.deps.json
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Application.dll
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Application.pdb
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Domain.dll
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Domain.pdb
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.csproj.AssemblyReference.cache
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.AssemblyInfoInputs.cache
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.AssemblyInfo.cs
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.csproj.CopyComplete
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.dll
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\refint\TourReservationApi.Application.dll
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.pdb
+C:\Users\Alpsu\OneDrive\Masaüstü\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\ref\TourReservationApi.Application.dll
