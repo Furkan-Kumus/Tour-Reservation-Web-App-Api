@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using TourReservationApi.Persistence.Contexts;
@@ -11,9 +12,11 @@ using TourReservationApi.Persistence.Contexts;
 namespace TourReservationApi.Persistence.Migrations
 {
     [DbContext(typeof(RegisterAPIDbContext))]
-    partial class RegisterAPIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230731144207_kj")]
+    partial class kj
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

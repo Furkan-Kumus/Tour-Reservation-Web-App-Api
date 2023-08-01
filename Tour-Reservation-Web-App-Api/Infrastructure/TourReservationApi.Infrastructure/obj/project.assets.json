@@ -1973,23 +1973,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\furka\\.nuget\\packages\\": {},
+    "C:\\Users\\hp\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Infrastructure\\TourReservationApi.Infrastructure\\TourReservationApi.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\staj proje\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Infrastructure\\TourReservationApi.Infrastructure\\TourReservationApi.Infrastructure.csproj",
       "projectName": "TourReservationApi.Infrastructure",
-      "projectPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Infrastructure\\TourReservationApi.Infrastructure\\TourReservationApi.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\furka\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Infrastructure\\TourReservationApi.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\hp\\Desktop\\staj proje\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Infrastructure\\TourReservationApi.Infrastructure\\TourReservationApi.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\staj proje\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Infrastructure\\TourReservationApi.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\furka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1998,15 +1998,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj": {
-              "projectPath": "C:\\Users\\furka\\Desktop\\Tour-Reservation-Web-App\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj"
+            "C:\\Users\\hp\\Desktop\\staj proje\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\staj proje\\Tour-Reservation-Web-App-Api\\Tour-Reservation-Web-App-Api\\Core\\TourReservationApi.Application\\TourReservationApi.Application.csproj"
             }
           }
         }
@@ -2045,7 +2044,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.1.1 was resolved.",
+      "message": "Bağımlılık kısıtlaması dışında algılanan paket sürümü: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0, MediatR (>= 11.0.0 && < 12.0.0) gerektiriyor ancak sürüm MediatR 12.1.1 çözümlenmiş.",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net7.0"

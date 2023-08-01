@@ -28,3 +28,18 @@ C:\Users\furka\Desktop\Tour-Reservation-Web-App\Tour-Reservation-Web-App-Api\Tou
 C:\Users\furka\Desktop\Tour-Reservation-Web-App\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\refint\TourReservationApi.Application.dll
 C:\Users\furka\Desktop\Tour-Reservation-Web-App\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.pdb
 C:\Users\furka\Desktop\Tour-Reservation-Web-App\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\ref\TourReservationApi.Application.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Application.deps.json
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Application.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Application.pdb
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Domain.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\bin\Debug\net7.0\TourReservationApi.Domain.pdb
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.AssemblyInfo.cs
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.csproj.CopyComplete
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\refint\TourReservationApi.Application.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\TourReservationApi.Application.pdb
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Core\TourReservationApi.Application\obj\Debug\net7.0\ref\TourReservationApi.Application.dll
