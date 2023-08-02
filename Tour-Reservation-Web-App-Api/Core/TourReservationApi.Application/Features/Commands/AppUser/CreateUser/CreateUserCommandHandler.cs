@@ -23,9 +23,9 @@ namespace TourReservationApi.Application.Features.Commands.AppUser.CreateUser
             IdentityResult result = await _userManager.CreateAsync(new()
             {
                 Id = Guid.NewGuid().ToString(),
+                NameSurname = request.NameSurname,
                 UserName = request.Username,
-                Email = request.Email,
-                NameSurname = request.NameSurname
+                Email = request.Email
             }, request.Password);
 
             CreateUserCommandResponse response = new() { Succeeded = result.Succeeded};

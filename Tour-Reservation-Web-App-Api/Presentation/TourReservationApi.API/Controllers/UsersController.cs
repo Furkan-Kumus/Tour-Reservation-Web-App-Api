@@ -6,7 +6,7 @@ using TourReservationApi.Application.Features.Commands.AppUser.CreateUser;
 
 namespace TourReservationApi.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -23,7 +23,7 @@ namespace TourReservationApi.API.Controllers
             CreateUserCommandResponse response = await _mediator.Send(createUserCommandRequest);
             return Ok(response);
         }
-        [HttpPost("[action]")]
+        [HttpPost]
 
         public async Task<ActionResult> Login(LoginUserCommandRequest loginUserCommandRequest)
             {
