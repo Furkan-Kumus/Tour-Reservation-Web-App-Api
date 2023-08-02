@@ -55,3 +55,5 @@ C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web
 C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\obj\Debug\net7.0\TourReservationApi.Persistence.pdb
 C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\obj\Debug\net7.0\TourReservationApi.Persistence.genruntimeconfig.cache
 C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\obj\Debug\net7.0\ref\TourReservationApi.Persistence.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\bin\Debug\net7.0\TourReservationApi.Infrastructure.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Infrastructure\TourReservationApi.Persistence\bin\Debug\net7.0\TourReservationApi.Infrastructure.pdb

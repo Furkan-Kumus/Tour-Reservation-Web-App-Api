@@ -6,13 +6,15 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using TourReservationApi.Application.Abstractions.Token;
 
-namespace ETicaretAPI.Application
+namespace TourReservationApi.Application
 {
     public static class ServiceRegistration
     {
         public static void AddApplicationServices(this IServiceCollection collection)
         {
+           // collection.AddScoped<ITokenHandler, ITokenHandler>(); //ben+
             collection.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceRegistration).Assembly));
         }
     }

@@ -179,3 +179,12 @@ C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web
 C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\obj\Debug\net7.0\TourReservationApi.API.pdb
 C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\obj\Debug\net7.0\TourReservationApi.API.genruntimeconfig.cache
 C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\obj\Debug\net7.0\ref\TourReservationApi.API.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\TourReservationApi.Infrastructure.dll
+C:\Users\hp\Desktop\staj proje\Tour-Reservation-Web-App-Api\Tour-Reservation-Web-App-Api\Presentation\TourReservationApi.API\bin\Debug\net7.0\TourReservationApi.Infrastructure.pdb

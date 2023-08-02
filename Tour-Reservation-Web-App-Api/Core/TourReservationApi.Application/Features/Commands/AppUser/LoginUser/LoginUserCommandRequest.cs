@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Features.Commands.AppUser.LoginUser
+namespace TourReservationApi.Application.Features.Commands.AppUser.LoginUser
 {
     public class LoginUserCommandRequest : IRequest<LoginUserCommandResponse>
     {
@@ -13,3 +13,4 @@ namespace ETicaretAPI.Application.Features.Commands.AppUser.LoginUser
         public string Password { get; set; }
     }
 }
+

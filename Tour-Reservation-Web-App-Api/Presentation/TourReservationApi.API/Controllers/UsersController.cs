@@ -1,4 +1,4 @@
-﻿using ETicaretAPI.Application.Features.Commands.AppUser.LoginUser;
+﻿using TourReservationApi .Application.Features.Commands.AppUser.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

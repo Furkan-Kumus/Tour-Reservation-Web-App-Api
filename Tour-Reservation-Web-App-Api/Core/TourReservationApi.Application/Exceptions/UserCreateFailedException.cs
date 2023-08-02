@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Exceptions
+namespace TourReservationApi.Application.Exceptions
 {
     public class UserCreateFailedException : Exception
     {
