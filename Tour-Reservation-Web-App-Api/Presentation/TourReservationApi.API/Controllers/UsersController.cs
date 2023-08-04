@@ -1,4 +1,4 @@
-﻿using TourReservationApi .Application.Features.Commands.AppUser.LoginUser;
+﻿using TourReservationApi.Application.Features.Commands.AppUser.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -26,9 +26,9 @@ namespace TourReservationApi.API.Controllers
         [HttpPost]
 
         public async Task<ActionResult> Login(LoginUserCommandRequest loginUserCommandRequest)
-            {
-        LoginUserCommandResponse response = await _mediator.Send(loginUserCommandRequest);
+        {
+            LoginUserCommandResponse response = await _mediator.Send(loginUserCommandRequest);
             return Ok(response);
-            }
+        }
     }
 }

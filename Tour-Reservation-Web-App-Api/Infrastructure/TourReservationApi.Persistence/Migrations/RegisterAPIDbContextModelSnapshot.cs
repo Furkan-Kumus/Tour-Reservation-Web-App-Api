@@ -128,6 +128,25 @@ namespace TourReservationApi.Persistence.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("TourReservationApi.Domain.Entities.Flight", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("FlightCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FlightRegion")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Flights");
+                });
+
             modelBuilder.Entity("TourReservationApi.Domain.Entities.Identity.AppRole", b =>
                 {
                     b.Property<string>("Id")

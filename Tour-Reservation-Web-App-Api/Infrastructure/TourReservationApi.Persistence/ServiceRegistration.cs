@@ -8,10 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using TourReservationApi.Application.Abstractions;
 using TourReservationApi.Application.Abstractions.Token;
+using TourReservationApi.Application.Repositories;
 using TourReservationApi.Domain.Entities.Identity;
 using TourReservationApi.Infrastructure.Services.Token;
 using TourReservationApi.Persistence.Concretes;
 using TourReservationApi.Persistence.Contexts;
+using TourReservationApi.Persistence.Repositories;
+using TourReservationApi.Application.Repositories;
+using TourReservationApi.Persistence.Repositories;
+using TourReservationApi.Domain.Entities.Identity;
 
 namespace TourReservationApi.Persistence
 {
@@ -24,6 +29,11 @@ namespace TourReservationApi.Persistence
             services.AddDbContext<RegisterAPIDbContext>(options => options.UseNpgsql("Host=localhost; Database=TourReservationDb; Username=postgres; Password=123; Port=5432"));
             services.AddIdentity<Domain.Entities.Identity.AppUser, AppRole>(
             ).AddEntityFrameworkStores<RegisterAPIDbContext>();
+
+
+            services.AddScoped<IProductReadRepository, ProductReadRepository>();
+            services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
+
         }
     }
 }
