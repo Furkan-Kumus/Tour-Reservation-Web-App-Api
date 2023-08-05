@@ -5,29 +5,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TourReservationApi.Application.Features.Commands.Tour.CreateFlight;
+using TourReservationApi.Application.Features.Commands.Tour.CreateRegion;
 using TourReservationApi.Application.Repositories;
 
-namespace TourReservationApi.Application.Features.Commands.Tour.CreateCreateFlight
+namespace TourReservationApi.Application.Features.Commands.Tour.CreateCreateRegion
 {
-    public class CreateFlightCommandHandler : IRequestHandler<CreateFlightCommandRequest, CreateFlightCommandResponse>
+    public class CreateRegionCommandHandler : IRequestHandler<CreateRegionCommandRequest, CreateRegionCommandResponse>
     {
-        readonly IProductWriteRepository _productWriteRepository;
+        readonly IRegionWriteRepository _RegionWriteRepository;
 
-        public CreateFlightCommandHandler(IProductWriteRepository productWriteRepository)
+        public CreateRegionCommandHandler(IRegionWriteRepository RegionWriteRepository)
         {
-            _productWriteRepository = productWriteRepository;
+            _RegionWriteRepository = RegionWriteRepository;
         }
 
-        public async Task<CreateFlightCommandResponse> Handle(CreateFlightCommandRequest request, CancellationToken cancellationToken)
+        public async Task<CreateRegionCommandResponse> Handle(CreateRegionCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.AddAsync(new()
+            await _RegionWriteRepository.AddAsync(new()
             {
-                FlightCode = request.FlightCode,
-                FlightRegion = request.FlightRegion,
+                RegionCode = request.RegionCode,
+                RegionName = request.RegionName,
+                RegionDistance = request.RegionDistance,
             });
-            await _productWriteRepository.SaveAsync();
+            await _RegionWriteRepository.SaveAsync();
             return new();
-        }
+
+           
+
+    }
     }
 }

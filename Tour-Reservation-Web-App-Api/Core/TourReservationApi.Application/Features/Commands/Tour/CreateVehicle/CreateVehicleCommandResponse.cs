@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TourReservationApi.Application.Features.Commands.Tour.CreateFlight
+namespace TourReservationApi.Application.Features.Commands.Tour.CreateVehicle
 {
     public class CreateVehicleCommandResponse
     {

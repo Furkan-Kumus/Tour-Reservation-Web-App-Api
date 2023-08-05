@@ -5,29 +5,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TourReservationApi.Application.Features.Commands.Tour.CreateFlight;
+using TourReservationApi.Application.Features.Commands.Tour.CreateVehicle;
 using TourReservationApi.Application.Repositories;
 
-namespace TourReservationApi.Application.Features.Commands.Tour.CreateCreateFlight
+namespace TourReservationApi.Application.Features.Commands.Tour.CreateCreateVehicle
 {
-    public class CreateFlightCommandHandler : IRequestHandler<CreateFlightCommandRequest, CreateFlightCommandResponse>
+    public class CreateVehicleCommandHandler : IRequestHandler<CreateVehicleCommandRequest, CreateVehicleCommandResponse>
     {
-        readonly IProductWriteRepository _productWriteRepository;
+        readonly IVehicleWriteRepository _VehicleWriteRepository;
 
-        public CreateFlightCommandHandler(IProductWriteRepository productWriteRepository)
+        public CreateVehicleCommandHandler(IVehicleWriteRepository VehicleWriteRepository)
         {
-            _productWriteRepository = productWriteRepository;
+            _VehicleWriteRepository = VehicleWriteRepository;
         }
 
-        public async Task<CreateFlightCommandResponse> Handle(CreateFlightCommandRequest request, CancellationToken cancellationToken)
+        public async Task<CreateVehicleCommandResponse> Handle(CreateVehicleCommandRequest request, CancellationToken cancellationToken)
         {
-            await _productWriteRepository.AddAsync(new()
+            await _VehicleWriteRepository.AddAsync(new()
             {
-                FlightCode = request.FlightCode,
-                FlightRegion = request.FlightRegion,
+                VehicleCode = request.VehicleCode,
+                VehicleLicensePlate = request.VehicleLicensePlate,
+                VehicleDriver = request.VehicleDriver,
+                VehicleType = request.VehicleType,
+                VehicleForPeople = request.VehicleForPeople,
             });
-            await _productWriteRepository.SaveAsync();
+            await _VehicleWriteRepository.SaveAsync();
             return new();
-        }
+
+    }
     }
 }

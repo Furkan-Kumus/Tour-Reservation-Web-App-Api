@@ -5,11 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TourReservationApi.Application.Features.Commands.Tour.CreateFlight
+namespace TourReservationApi.Application.Features.Commands.Tour.CreateRegion
 {
     public class CreateRegionCommandRequest : IRequest<CreateRegionCommandResponse>
     {
-        public string FlightCode { get; set; }
-        public string FlightRegion { get; set; }
+        public string RegionCode { get; set; }
+        public string RegionName { get; set; }
+        public int RegionDistance { get; set; }
     }
 }

@@ -241,6 +241,28 @@ namespace TourReservationApi.Persistence.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("TourReservationApi.Domain.Entities.Region", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("RegionCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("RegionDistance")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("RegionName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Regions");
+                });
+
             modelBuilder.Entity("TourReservationApi.Domain.Entities.Register", b =>
                 {
                     b.Property<Guid>("Id")
@@ -262,6 +284,37 @@ namespace TourReservationApi.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Registers");
+                });
+
+            modelBuilder.Entity("TourReservationApi.Domain.Entities.Vehicle", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("VehicleCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("VehicleDriver")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("VehicleForPeople")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("VehicleLicensePlate")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("VehicleType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vehicles");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

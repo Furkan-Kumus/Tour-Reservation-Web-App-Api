@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 using TourReservationApi.Application.Features.Commands.AppUser.CreateUser;
 using System.Net;
 using TourReservationApi.Application.Features.Commands.Tour.CreateFlight;
-
+using TourReservationApi.Application.Features.Commands.Tour.CreateVehicle;
+using TourReservationApi.Application.Features.Commands.Tour.CreateRegion;
 namespace TourReservationApi.API.Controllers
 {
     [Route("api/[controller]/[action]")]
@@ -33,10 +34,34 @@ namespace TourReservationApi.API.Controllers
         //    return Ok(response);
         //}
 
-        [HttpPost]
+        [HttpPost("Flight")]
         public async Task<IActionResult> Post(CreateFlightCommandRequest createProductCommandRequest)
         {
             CreateFlightCommandResponse response = await _mediator.Send(createProductCommandRequest);
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        //Repostoris ve I repostroisteki Write Readler 
+        //TourElementsController
+        //Handler response request  Handler a strinlger aktar
+        //service registiration and import
+        //entities
+        //registerapidbcontents e ekle
+
+
+        [HttpPost("Vehicle")]
+
+        public async Task<IActionResult> Post(CreateVehicleCommandRequest createProductCommandRequest)
+        {
+            CreateVehicleCommandResponse response = await _mediator.Send(createProductCommandRequest);
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPost("Region")]
+
+        public async Task<IActionResult> Post(CreateRegionCommandRequest createProductCommandRequest)
+        {
+            CreateRegionCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
 

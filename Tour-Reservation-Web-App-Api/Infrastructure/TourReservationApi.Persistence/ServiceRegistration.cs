@@ -30,10 +30,12 @@ namespace TourReservationApi.Persistence
             services.AddIdentity<Domain.Entities.Identity.AppUser, AppRole>(
             ).AddEntityFrameworkStores<RegisterAPIDbContext>();
 
-
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
-
+            services.AddScoped<IRegionReadRepository, RegionReadRepository>();
+            services.AddScoped<IRegionWriteRepository, RegionWriteRepository>();
+            services.AddScoped<IVehicleReadRepository, VehicleReadRepository>();
+            services.AddScoped<IVehicleWriteRepository, VehicleWriteRepository>();
         }
     }
 }

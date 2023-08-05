@@ -266,6 +266,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntitiyFrameworkDatabaseMigator": {
+              "target": "Package",
+              "version": "[0.1.3, )"
+            },
             "Microsoft.AspNet.Identity.EntityFramework": {
               "target": "Package",
               "version": "[2.2.4, )"
