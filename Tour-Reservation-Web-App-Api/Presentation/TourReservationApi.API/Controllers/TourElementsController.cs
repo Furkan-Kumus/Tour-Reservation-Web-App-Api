@@ -7,6 +7,9 @@ using System.Net;
 using TourReservationApi.Application.Features.Commands.Tour.CreateFlight;
 using TourReservationApi.Application.Features.Commands.Tour.CreateVehicle;
 using TourReservationApi.Application.Features.Commands.Tour.CreateRegion;
+using TourReservationApi.Application.Features.Commands.Tour.CreateCountry;
+using TourReservationApi.Application.Features.Commands.Tour.CreateAirport;
+using TourReservationApi.Application.Features.Commands.Tour.CreateDriver;
 namespace TourReservationApi.API.Controllers
 {
     [Route("api/[controller]/[action]")]
@@ -62,6 +65,30 @@ namespace TourReservationApi.API.Controllers
         public async Task<IActionResult> Post(CreateRegionCommandRequest createProductCommandRequest)
         {
             CreateRegionCommandResponse response = await _mediator.Send(createProductCommandRequest);
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPost("Country")]
+
+        public async Task<IActionResult> Post(CreateCountryCommandRequest createProductCommandRequest)
+        {
+            CreateCountryCommandResponse response = await _mediator.Send(createProductCommandRequest);
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPost("Airport")]
+
+        public async Task<IActionResult> Post(CreateAirportCommandRequest createProductCommandRequest)
+        {
+            CreateAirportCommandResponse response = await _mediator.Send(createProductCommandRequest);
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpPost("Driver")]
+
+        public async Task<IActionResult> Post(CreateDriverCommandRequest createProductCommandRequest)
+        {
+            CreateDriverCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
 
