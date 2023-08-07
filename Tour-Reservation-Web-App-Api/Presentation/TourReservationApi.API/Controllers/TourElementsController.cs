@@ -10,6 +10,14 @@ using TourReservationApi.Application.Features.Commands.Tour.CreateRegion;
 using TourReservationApi.Application.Features.Commands.Tour.CreateCountry;
 using TourReservationApi.Application.Features.Commands.Tour.CreateAirport;
 using TourReservationApi.Application.Features.Commands.Tour.CreateDriver;
+using TourReservationApi.Application.Features.Queries.Product.GetAllProduct;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllFlight;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllVehicle;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllAirport;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllCountry;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllDriver;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllRegion;
+
 namespace TourReservationApi.API.Controllers
 {
     [Route("api/[controller]/[action]")]
@@ -36,7 +44,12 @@ namespace TourReservationApi.API.Controllers
         //    GetByIdProductQueryResponse response = await _mediator.Send(getByIdProductQueryRequest);
         //    return Ok(response);
         //}
-
+        [HttpGet("Flight")]
+        public async Task<IActionResult> Get([FromQuery] GetAllFlightQueryRequest getAllProductQueryRequest)
+        {
+            GetAllFlightQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
         [HttpPost("Flight")]
         public async Task<IActionResult> Post(CreateFlightCommandRequest createProductCommandRequest)
         {
@@ -51,7 +64,12 @@ namespace TourReservationApi.API.Controllers
         //entities
         //registerapidbcontents e ekle
 
-
+        [HttpGet("Vehicle")]
+        public async Task<IActionResult> Get([FromQuery] GetAllVehicleQueryRequest getAllProductQueryRequest)
+        {
+            GetAllVehicleQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
         [HttpPost("Vehicle")]
 
         public async Task<IActionResult> Post(CreateVehicleCommandRequest createProductCommandRequest)
@@ -59,7 +77,12 @@ namespace TourReservationApi.API.Controllers
             CreateVehicleCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
-
+        [HttpGet("Region")]
+        public async Task<IActionResult> Get([FromQuery] GetAllRegionQueryRequest getAllProductQueryRequest)
+        {
+            GetAllRegionQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
         [HttpPost("Region")]
 
         public async Task<IActionResult> Post(CreateRegionCommandRequest createProductCommandRequest)
@@ -67,7 +90,12 @@ namespace TourReservationApi.API.Controllers
             CreateRegionCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
-
+        [HttpGet("Country")]
+        public async Task<IActionResult> Get([FromQuery] GetAllCountryQueryRequest getAllProductQueryRequest)
+        {
+            GetAllCountryQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
         [HttpPost("Country")]
 
         public async Task<IActionResult> Post(CreateCountryCommandRequest createProductCommandRequest)
@@ -76,6 +104,12 @@ namespace TourReservationApi.API.Controllers
             return StatusCode((int)HttpStatusCode.Created);
         }
 
+        [HttpGet("Airport")]
+        public async Task<IActionResult> Get([FromQuery] GetAllAirportQueryRequest getAllProductQueryRequest)
+        {
+            GetAllAirportQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
         [HttpPost("Airport")]
 
         public async Task<IActionResult> Post(CreateAirportCommandRequest createProductCommandRequest)
@@ -83,7 +117,12 @@ namespace TourReservationApi.API.Controllers
             CreateAirportCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
-
+        [HttpGet("Driver")]
+        public async Task<IActionResult> Get([FromQuery] GetAllDriverQueryRequest getAllProductQueryRequest)
+        {
+            GetAllDriverQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
         [HttpPost("Driver")]
 
         public async Task<IActionResult> Post(CreateDriverCommandRequest createProductCommandRequest)

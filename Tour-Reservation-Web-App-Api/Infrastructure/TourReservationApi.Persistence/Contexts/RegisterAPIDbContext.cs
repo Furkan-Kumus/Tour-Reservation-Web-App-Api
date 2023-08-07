@@ -27,5 +27,6 @@ namespace TourReservationApi.Persistence.Contexts
         public DbSet<Region> Regions { get; set; }
         public DbSet<Country> Countrys { get; set; }
         public DbSet<Airport> Airports { get; set; }
+        public DbSet<Driver> Drivers { get; set; }
     }
 }
