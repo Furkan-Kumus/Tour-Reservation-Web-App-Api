@@ -23,6 +23,7 @@ using TourReservationApi.Application.Features.Commands.Tour.RemoveRegion;
 using TourReservationApi.Application.Features.Commands.Tour.RemoveAirport;
 using TourReservationApi.Application.Features.Commands.Tour.RemoveDriver;
 using TourReservationApi.Application.Features.Commands.Tour.RemoveCountry;
+using TourReservationApi.Application.Features.Commands.Vehicle.UpdateVehicle;
 
 namespace TourReservationApi.API.Controllers
 {
@@ -174,12 +175,12 @@ namespace TourReservationApi.API.Controllers
             RemoveDriverCommandResponse response = await _mediator.Send(removeProductCommandRequest);
             return Ok();
         }
-        //[HttpPut]
-        //public async Task<IActionResult> Put([FromBody] UpdateProductCommandRequest updateProductCommandRequest)
-        //{
-        //    UpdateProductCommandResponse response = await _mediator.Send(updateProductCommandRequest);
-        //    return Ok();
-        //}
+        [HttpPut]
+        public async Task<IActionResult> Put([FromBody] UpdateVehicleCommandRequest updateProductCommandRequest)
+        {
+            UpdateVehicleCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            return Ok();
+        }
 
         //[HttpDelete("{Id}")]
         //public async Task<IActionResult> Delete([FromRoute] RemoveProductCommandRequest removeProductCommandRequest)
