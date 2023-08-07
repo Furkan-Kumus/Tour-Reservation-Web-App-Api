@@ -24,6 +24,14 @@ using TourReservationApi.Application.Features.Commands.Tour.RemoveAirport;
 using TourReservationApi.Application.Features.Commands.Tour.RemoveDriver;
 using TourReservationApi.Application.Features.Commands.Tour.RemoveCountry;
 using TourReservationApi.Application.Features.Commands.Vehicle.UpdateVehicle;
+using TourReservationApi.Application.Features.Commands.Region.UpdateRegion;
+using TourReservationApi.Application.Features.Commands.Tour.UpdateCountry;
+using TourReservationApi.Application.Features.Commands.Country.UpdateCountry;
+using TourReservationApi.Application.Features.Commands.Airport.UpdateAirport;
+using TourReservationApi.Application.Features.Commands.Tour.UpdateAirport;
+using TourReservationApi.Application.Features.Commands.Driver.UpdateDriver;
+using TourReservationApi.Application.Features.Commands.Tour.UpdateDriver;
+using ETicaretAPI.Application.Features.Commands.Product.UpdateProduct;
 
 namespace TourReservationApi.API.Controllers
 {
@@ -69,6 +77,12 @@ namespace TourReservationApi.API.Controllers
             RemoveFlightCommandResponse response = await _mediator.Send(removeProductCommandRequest);
             return Ok();
         }
+        [HttpPut("Flight/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateFlightCommandRequest updateProductCommandRequest)
+        {
+            UpdateFlightCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            return Ok();
+        }
         //Repostoris ve I repostroisteki Write Readler 
         //TourElementsController
         //Handler response request  Handler a strinlger aktar
@@ -97,6 +111,12 @@ namespace TourReservationApi.API.Controllers
             return Ok();
         }
 
+        [HttpPut("Vehicle/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateVehicleCommandRequest updateProductCommandRequest)
+        {
+            UpdateVehicleCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            return Ok();
+        }
 
         [HttpGet("Region")]
         public async Task<IActionResult> Get([FromQuery] GetAllRegionQueryRequest getAllProductQueryRequest)
@@ -118,6 +138,12 @@ namespace TourReservationApi.API.Controllers
             RemoveRegionCommandResponse response = await _mediator.Send(removeProductCommandRequest);
             return Ok();
         }
+        [HttpPut("Region/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateRegionCommandRequest updateProductCommandRequest)
+        {
+            UpdateRegionCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            return Ok();
+        }
         [HttpGet("Country")]
         public async Task<IActionResult> Get([FromQuery] GetAllCountryQueryRequest getAllProductQueryRequest)
         {
@@ -135,6 +161,12 @@ namespace TourReservationApi.API.Controllers
         public async Task<IActionResult> Delete([FromRoute] RemoveCountryCommandRequest removeProductCommandRequest)
         {
             RemoveCountryCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
+        }
+        [HttpPut("Country/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateCountryCommandRequest updateProductCommandRequest)
+        {
+            UpdateCountryCommandResponse response = await _mediator.Send(updateProductCommandRequest);
             return Ok();
         }
         [HttpGet("Airport")]
@@ -156,6 +188,12 @@ namespace TourReservationApi.API.Controllers
             RemoveAirportCommandResponse response = await _mediator.Send(removeProductCommandRequest);
             return Ok();
         }
+        [HttpPut("Airport/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateAirportCommandRequest updateProductCommandRequest)
+        {
+            UpdateAirportCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            return Ok();
+        }
         [HttpGet("Driver")]
         public async Task<IActionResult> Get([FromQuery] GetAllDriverQueryRequest getAllProductQueryRequest)
         {
@@ -175,12 +213,13 @@ namespace TourReservationApi.API.Controllers
             RemoveDriverCommandResponse response = await _mediator.Send(removeProductCommandRequest);
             return Ok();
         }
-        [HttpPut]
-        public async Task<IActionResult> Put([FromBody] UpdateVehicleCommandRequest updateProductCommandRequest)
+        [HttpPut("Driver/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateDriverCommandRequest updateProductCommandRequest)
         {
-            UpdateVehicleCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            UpdateDriverCommandResponse response = await _mediator.Send(updateProductCommandRequest);
             return Ok();
         }
+
 
         //[HttpDelete("{Id}")]
         //public async Task<IActionResult> Delete([FromRoute] RemoveProductCommandRequest removeProductCommandRequest)
