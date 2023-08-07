@@ -17,6 +17,12 @@ using TourReservationApi.Application.Features.Queries.Tour.GetAllAirport;
 using TourReservationApi.Application.Features.Queries.Tour.GetAllCountry;
 using TourReservationApi.Application.Features.Queries.Tour.GetAllDriver;
 using TourReservationApi.Application.Features.Queries.Tour.GetAllRegion;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveVehicle;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveFlight;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveRegion;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveAirport;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveDriver;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveCountry;
 
 namespace TourReservationApi.API.Controllers
 {
@@ -56,7 +62,12 @@ namespace TourReservationApi.API.Controllers
             CreateFlightCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
-
+        [HttpDelete("Flight/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveFlightCommandRequest removeProductCommandRequest)
+        {
+            RemoveFlightCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
+        }
         //Repostoris ve I repostroisteki Write Readler 
         //TourElementsController
         //Handler response request  Handler a strinlger aktar
@@ -77,18 +88,34 @@ namespace TourReservationApi.API.Controllers
             CreateVehicleCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
+
+        [HttpDelete("Vehicle/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveVehicleCommandRequest removeProductCommandRequest)
+        {
+            RemoveVehicleCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
+        }
+
+
         [HttpGet("Region")]
         public async Task<IActionResult> Get([FromQuery] GetAllRegionQueryRequest getAllProductQueryRequest)
         {
             GetAllRegionQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
             return Ok(response);
         }
+        
         [HttpPost("Region")]
 
         public async Task<IActionResult> Post(CreateRegionCommandRequest createProductCommandRequest)
         {
             CreateRegionCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
+        }
+        [HttpDelete("Region/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveRegionCommandRequest removeProductCommandRequest)
+        {
+            RemoveRegionCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
         }
         [HttpGet("Country")]
         public async Task<IActionResult> Get([FromQuery] GetAllCountryQueryRequest getAllProductQueryRequest)
@@ -103,7 +130,12 @@ namespace TourReservationApi.API.Controllers
             CreateCountryCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
-
+        [HttpDelete("Country/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveCountryCommandRequest removeProductCommandRequest)
+        {
+            RemoveCountryCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
+        }
         [HttpGet("Airport")]
         public async Task<IActionResult> Get([FromQuery] GetAllAirportQueryRequest getAllProductQueryRequest)
         {
@@ -116,6 +148,12 @@ namespace TourReservationApi.API.Controllers
         {
             CreateAirportCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
+        }
+        [HttpDelete("Airport/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveAirportCommandRequest removeProductCommandRequest)
+        {
+            RemoveAirportCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
         }
         [HttpGet("Driver")]
         public async Task<IActionResult> Get([FromQuery] GetAllDriverQueryRequest getAllProductQueryRequest)
@@ -130,7 +168,12 @@ namespace TourReservationApi.API.Controllers
             CreateDriverCommandResponse response = await _mediator.Send(createProductCommandRequest);
             return StatusCode((int)HttpStatusCode.Created);
         }
-
+        [HttpDelete("Driver/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveDriverCommandRequest removeProductCommandRequest)
+        {
+            RemoveDriverCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
+        }
         //[HttpPut]
         //public async Task<IActionResult> Put([FromBody] UpdateProductCommandRequest updateProductCommandRequest)
         //{
