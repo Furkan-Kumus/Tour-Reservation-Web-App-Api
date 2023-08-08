@@ -32,6 +32,11 @@ using TourReservationApi.Application.Features.Commands.Tour.UpdateAirport;
 using TourReservationApi.Application.Features.Commands.Driver.UpdateDriver;
 using TourReservationApi.Application.Features.Commands.Tour.UpdateDriver;
 using ETicaretAPI.Application.Features.Commands.Product.UpdateProduct;
+using TourReservationApi.Application.Features.Commands.Tour.CreateCity;
+using TourReservationApi.Application.Features.Commands.Tour.RemoveCity;
+using TourReservationApi.Application.Features.Commands.Tour.UpdateCity;
+using TourReservationApi.Application.Features.Commands.City.UpdateCity;
+using TourReservationApi.Application.Features.Queries.Tour.GetAllCity;
 
 namespace TourReservationApi.API.Controllers
 {
@@ -117,6 +122,56 @@ namespace TourReservationApi.API.Controllers
             UpdateVehicleCommandResponse response = await _mediator.Send(updateProductCommandRequest);
             return Ok();
         }
+
+
+
+
+
+
+
+
+
+        
+        [HttpGet("City")]
+        public async Task<IActionResult> Get([FromQuery] GetAllCityQueryRequest getAllProductQueryRequest)
+        {
+            GetAllCityQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
+            return Ok(response);
+        }
+        [HttpPost("City")]
+
+        public async Task<IActionResult> Post(CreateCityCommandRequest createProductCommandRequest)
+        {
+            CreateCityCommandResponse response = await _mediator.Send(createProductCommandRequest);
+            return StatusCode((int)HttpStatusCode.Created);
+        }
+
+        [HttpDelete("City/{Id}")]
+        public async Task<IActionResult> Delete([FromRoute] RemoveCityCommandRequest removeProductCommandRequest)
+        {
+           RemoveCityCommandResponse response = await _mediator.Send(removeProductCommandRequest);
+            return Ok();
+        }
+
+        [HttpPut("City/{Id}")]
+        public async Task<IActionResult> Put([FromBody] UpdateCityCommandRequest updateProductCommandRequest)
+        {
+            UpdateCityCommandResponse response = await _mediator.Send(updateProductCommandRequest);
+            return Ok();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         [HttpGet("Region")]
         public async Task<IActionResult> Get([FromQuery] GetAllRegionQueryRequest getAllProductQueryRequest)

@@ -151,6 +151,28 @@ namespace TourReservationApi.Persistence.Migrations
                     b.ToTable("Airports");
                 });
 
+            modelBuilder.Entity("TourReservationApi.Domain.Entities.City", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CityCountry")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("CityDistance")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("CityName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Citys");
+                });
+
             modelBuilder.Entity("TourReservationApi.Domain.Entities.Country", b =>
                 {
                     b.Property<Guid>("Id")
@@ -168,6 +190,25 @@ namespace TourReservationApi.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Countrys");
+                });
+
+            modelBuilder.Entity("TourReservationApi.Domain.Entities.Driver", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("DriverName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("DriverSurname")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Drivers");
                 });
 
             modelBuilder.Entity("TourReservationApi.Domain.Entities.Flight", b =>

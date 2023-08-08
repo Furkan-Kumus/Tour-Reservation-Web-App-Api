@@ -40,6 +40,8 @@ namespace TourReservationApi.Persistence
             services.AddScoped<IAirportWriteRepository, AirportWriteRepository>();
             services.AddScoped<IVehicleReadRepository, VehicleReadRepository>();
             services.AddScoped<IVehicleWriteRepository, VehicleWriteRepository>();
+            services.AddScoped<ICityReadRepository, CityReadRepository>();
+            services.AddScoped<ICityWriteRepository, CityWriteRepository>();
             services.AddScoped<IDriverReadRepository, DriverReadRepository>();
             services.AddScoped<IDriverWriteRepository, DriverWriteRepository>();
         }
