@@ -40,7 +40,7 @@ namespace TourReservationApi.Application.Features.Commands.AppUser.LoginUser
            SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
             if (result.Succeeded)//auth başarılı
             {
-             Token token = _tokenHandler.CreateAccessToken(5);
+             Token token = _tokenHandler.CreateAccessToken(25);
                 return new LoginUserSuccessCommandResponse()
                 {
                     Token = token
