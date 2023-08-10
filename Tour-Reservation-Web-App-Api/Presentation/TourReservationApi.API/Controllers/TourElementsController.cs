@@ -297,7 +297,6 @@ namespace TourReservationApi.API.Controllers
         //    List<GetProductImagesQueryResponse> response = await _mediator.Send(getProductImagesQueryRequest);
         //    return Ok(response);
         //}
-
         //[HttpDelete("[action]/{id}")]
         //public async Task<IActionResult> DeleteProductImage([FromRoute] RemoveProductImageCommandRequest removeProductImageCommandRequest, [FromQuery] string imageId)
         //{
