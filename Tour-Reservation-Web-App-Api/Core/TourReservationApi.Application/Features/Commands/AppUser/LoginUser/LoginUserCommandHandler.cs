@@ -46,6 +46,7 @@ namespace TourReservationApi.Application.Features.Commands.AppUser.LoginUser
                     Token = token
                 };
                 
+
             }
             throw new AuthenticationErrorException();
         }
