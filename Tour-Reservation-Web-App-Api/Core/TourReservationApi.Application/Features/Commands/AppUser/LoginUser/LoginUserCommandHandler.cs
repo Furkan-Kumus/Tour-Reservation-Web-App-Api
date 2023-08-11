@@ -36,7 +36,7 @@ namespace TourReservationApi.Application.Features.Commands.AppUser.LoginUser
 
             if (user == null)
                 throw new Exception("hataakullanici");
-
+            //deneme
            SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, request.Password, false);
             if (result.Succeeded)//auth başarılı
             {
